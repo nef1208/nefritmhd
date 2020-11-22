@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+nav{   
+    display :flex;
+    justify-content: space-around;
+    height: 80px;
+    align-items: center;
+
+
+}
+.title{
+    color: rgb(202, 191, 175);
+    margin: 20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    z-index: -1;
+}
+
+nav ul {
+    display :flex;
+    width: 40%;
+    list-style: none;
+    justify-content: space-between;
+    z-index: 1;
+}
+nav ul li a{
+    color: rgb(58, 58, 58);
+    font-weight: 700;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:#ddd;
+    transition: all 0.5s;
+}
+.menu-toggle{
+    display: none;
+    color:rgb(224, 211, 192);
+    margin: 50px;
+    position: relative;
+}
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    left: -8px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.content{
+    background-image: url(bg-01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-position:center center; 
+    text-align:center;
+    margin:auto;
+    padding:0;
+    z-index: -2;
+}
+.layer {
+    background-color: rgba(121, 121, 121, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.centered {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    padding: 200px 0;
+    text-align: center;
+    z-index: -1;
+  }
+  .centered h1{
+      color: #fff;
+      letter-spacing: 0.1em;
+      font-size: 40px;
+
+  }
+.bot-icon{
+    position: absolute;
+    margin: 250px 0;
+    text-align: center;
+    width: 100%;
+}
+.bot-icon i{
+    color: #fff;
+    padding: 20px;
+}
+.bot-icon i:hover{
+    color:rgb(161, 161, 161);
+    transition: 0.5s ease;
+}
+
+.name{
+    margin-top:570px;
+    position: relative;
+    z-index: -2;
+}
+.name h1{
+    text-align: center;
+    letter-spacing: 0.2em;
+    z-index: -2;
+}
+.profile {
+    padding: 50px;
+    padding-top:100px;
+}
+.profile p{
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+.profile p span{
+    background-color: yellow;
+}
+.profile h2{
+ margin: 40px;
+ font-size: 30px;
+ letter-spacing: 0.1em;
+}
+.education-t{
+    padding:0 40px;
+}
+.education-t h1{
+   padding: 40px 0;
+   text-align: center;
+}
+.timeline { 
+    border-top: 5px solid black;
+    width: 80%;
+    border-left: 5px solid black; 
+    height: 320px; 
+    position:absolute; 
+    left: 40px; 
+} 
+.hs{
+    margin: 40px;
+}
+.jhs{
+    margin: 40px;
+}
+.es{
+    margin: 40px;
+}
+.hs p{
+    letter-spacing: 0.2em;
+}
+.jhs p{
+    letter-spacing: 0.2em;
+}
+.es p{
+    letter-spacing: 0.2em;
+}
+.hs h1{
+    letter-spacing: 0.2em;
+}
+.jhs h1{
+    letter-spacing: 0.2em;
+}
+.es h1{
+    letter-spacing: 0.2em;
+}
+
+.education{
+    margin-bottom:450px;
+}
+.skills{
+    padding:0 40px;
+    margin-bottom: 600px;
+}
+.skills h1{
+   padding: 40px 0;
+   text-align: center;
+}
+.skills-l { 
+    border-top: 5px solid black;
+    width: 80%;
+    border-left: 5px solid black; 
+    height: 400px; 
+    position:absolute; 
+    left: 40px; 
+} 
+.skills-l span{
+    margin: 40px;
+    font-weight: 700;
+    font-size: 32px;
+}
+.skills-l p{
+  margin-left: 40px;
+  margin-bottom:40px;
+}
+.html{
+    margin-top:40px
+}
+.html span {
+    background-color: yellow;
+}
+.css span {
+    background-color: yellow;
+}
+.js span {
+    background-color: yellow;
+}
+.py span {
+    background-color: yellow;
+}
+.ve span {
+    background-color: yellow;
+}
+.organisation h1{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.org-list {
+    display :flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+.org-list img {
+    width: 20%;
+    margin: 50px;
+    border-radius: 50%;
+}
+.org-desc {
+    text-align: center;
+    text-transform: uppercase;
+}
+.org-desc h2{
+    letter-spacing: 0.2em;
+}
+.org-desc p{
+    margin: 20px 0;
+}
+.contact{
+    margin-top: 100px;
+    padding-top: 20px;
+    text-align: center;
+}
+.contact img{
+    border-radius: 50%;
+    width: 300px;
+    margin: 40px;
+}
+.con-i{
+    margin: 20px;
+    margin-bottom: 180px;
+}
+.con-i a{
+    color: rgb(58, 58, 58);
+    padding: 60px;
+
+}
+.con-i a:hover{
+ color: #ddd;
+ transition: all 0.5s;
+
+}
+.contact h1{
+    margin: 50px 0;
+}
+.contact h2{
+    margin: 50px 0;
+}
+.foot{
+    text-align: center;
+    line-height: 50px;
+    align-items: center;
+    background-color: rgb(138, 138, 138);
+}
+.foot h4{
+    color: #eee;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(202, 191, 175); /* Set a background color */
+    color: white; 
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+footer{
+    height : 100%;
+    background-color: #555;
+}
+.ft h2{
+    padding-top: 20px ;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+.fp{
+    text-align: center;
+    padding: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px ;
+    color: rgb(201, 201, 201);
+}
+.soc a{
+    color:rgb(201, 201, 201);
+    padding: 20px;
+}
+.soc{
+    text-align: center;
+    padding: 40px;
+}
+.soc a:hover{
+    color:rgb(128, 128, 128);
+    transition: all 0.5s;
+}
